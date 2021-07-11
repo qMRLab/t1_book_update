@@ -61,20 +61,20 @@ RUN cd $HOME/work;\
                 jupyterlab==2.2.0  \
                 repo2data; \
     python -m sos_notebook.install;\
-    git clone --single-branch -b master https://github.com/qMRLab/t1_book.git;                            \
-    cd t1_book;\
+    git clone https://github.com/zelenkastiot/t1_book_update.git;                            \
+    cd t1_book_update;\
     git clone https://github.com/neuropoly/qMRLab.git; \
     cd qMRLab; \
     git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
     cd ..; \
     mkdir qMRLab/data; \
     for i in _requirements/*_dataset.json; do repo2data -r "$i"; done; \
-    chmod -R 777 $HOME/work/t1_book; \
+    chmod -R 777 $HOME/work/t1_book_update; \
     octave --eval "cd qMRLab; \
                       startup; \
                       pkg list;"
 
-WORKDIR $HOME/work/t1_book
+WORKDIR $HOME/work/t1_book_update
 
 USER $NB_UID
 

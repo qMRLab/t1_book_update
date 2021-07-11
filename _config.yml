@@ -15,7 +15,7 @@ html:
   use_edit_page_button      : true  
   use_repository_button     : true  
   use_issues_button         : true  
-  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  
+  extra_navbar              : Return to <a href="https://conp-pcno.github.io/">NeuroLibre</a>  
   home_page_in_navbar       : true  
   baseurl                   : ""  
   comments:

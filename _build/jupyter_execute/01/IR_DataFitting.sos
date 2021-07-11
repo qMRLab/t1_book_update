@@ -8,11 +8,10 @@ Several factors impact the choice of the inversion recovery fitting algorithm.  
 Early implementations of inversion recovery fitting algorithms were designed around the computational power available at the time. These included the “null method” (Pykett et al. 1983), assuming that each T<sub>1</sub> value has unique zero-crossings (see Figure 2), and linear fitting of a rearranged version of Eq. 3 on a semi-log plot (Fukushima & Roeder 1981). Nowadays, a non-linear least-squares fitting algorithm (e.g. Levenberg-Marquardt) is more appropriate, and can be applied to either approximate or general forms of the signal model (Eq. 3 or Eq. 1). More recent work (Barral et al. 2010) demonstrated that T<sub>1</sub> maps can also be fitted much faster (up to 75 times compared to Levenberg-Marquardt) to fit  Eq. 1 – without a precision penalty – by using a reduced-dimension non-linear least squares (RD-NLS) algorithm. It was demonstrated that the following simplified 5-parameter equation can be sufficient for accurate T<sub>1</sub> mapping:
 </p>
 
-```{image} images/equation4.png
-:alt: img4
-:height: 50px
-:align: center
-```
+\begin{equation}\label{eq:4}
+S(TI) = a + be^{- \frac{TI}{T_1}}
+\end{equation}
+
 
 <p style="text-align:justify;">
 where <i>a</i> and <i>b</i> are complex values. If magnitude-only data is available, a 3-parameter model can be sufficient by taking the absolute value of Eq. 4.  While the RD-NLS algorithms are too complex to be presented here (the reader is referred to the paper, (Barral et al. 2010)),  the code for these algorithms <a href="http://www-mrsrl.stanford.edu/~jbarral/t1map.html" target="_blank">was released open-source</a> along with the original publication, and is also available as a <a href="https://github.com/neuropoly/qMRLab" target="_blank">qMRLab</a> T<sub>1</sub> mapping model. One important thing to note about Eq. 4 is that it is general – no assumption is made about TR – and is thus as robust as Eq. 1 as long as all pulse sequence parameters other than TI are kept constant between each measurement. Figure 4 compares simulated data (Eq. 1) using a range of TRs (1.5T<sub>1</sub> to 5T<sub>1</sub>) fitted using either RD-NLS & Eq. 4 or a Levenberg-Marquardt fit of Eq. 2.
