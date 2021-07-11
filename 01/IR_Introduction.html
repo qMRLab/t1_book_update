@@ -57,7 +57,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Signal Modelling" href="IR_SignalModelling.html" />
-    <link rel="prev" title="Quantitative T1 Mapping" href="../intro.html" />
+    <link rel="prev" title="Home" href="../intro.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -90,25 +90,16 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Quantitative T
-   <sub>
-    1
-   </sub>
-   Mapping
+   Home
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  Content
- </span>
-</p>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
   <a class="current reference internal" href="#">
    Inversion Recovery
   </a>
-  <ul class="collapse-ul">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="IR_SignalModelling.html">
      Signal Modelling
@@ -139,29 +130,44 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
+  <i class="fas fa-chevron-up">
   </i>
  </li>
-</ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  External Resources
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference external" href="https://github.com/zelenkastiot/t1_book_update">
-   GitHub Repository
-   <i class="fas fa-external-link-alt">
-   </i>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../02/VFA_Introduction.html">
+   Variable Flip Angle
   </a>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/VFA_SignalModelling.html">
+     Signal Modelling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/VFA_DataFitting.html">
+     Data Fitting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/VFA_BenefitsAndPitfalls.html">
+     Benefits and Pitfalls
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/VFA_References.html">
+     References
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-up">
+  </i>
  </li>
 </ul>
 
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  Return to <a href="https://conp-pcno.github.io/">NeuroLibre</a>
 </div>
 
 </div>
@@ -254,9 +260,14 @@ Widely considered the gold standard for T<sub>1</sub> mapping, the inversion rec
 <p style="text-align:justify;">
 Inversion recovery was first developed for NMR in the 1940s (Hahn 1949; Drain 1949), and the first T<sub>1</sub> map was acquired using a saturation-recovery technique (90° as a preparation pulse instead of 180°) by (Pykett and Mansfield 1978). Some distinct advantages of inversion recovery are its large dynamic range of signal change and an insensitivity to pulse sequence parameter imperfections (Stikov et al. 2015). Despite its proven robustness at measuring T<sub>1</sub>, inversion recovery is scarcely used in practice, because conventional implementations require repetition times (TRs) on the order of 2 to 5 T<sub>1</sub> (Steen et al. 1994), making it challenging to acquire whole-organ T<sub>1</sub> maps in a clinically feasible time. Nonetheless, it is continuously used as a reference measurement during the development of new techniques, or when comparing different T<sub>1</sub> mapping techniques, and several variations of the inversion recovery technique have been developed, making it practical for some applications (Messroghli et al. 2004; Piechnik et al. 2010).
 </p>
+<center>
+<b style="text-align:justify;">
+Figure 1. Pulse sequence of an inversion recovery experiment.
+</b>
+</center>
+<br>
 <div class="figure align-default" id="fig1">
 <a class="reference internal image-reference" href="../_images/ir_pulsesequences.png"><img alt="../_images/ir_pulsesequences.png" src="../_images/ir_pulsesequences.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Pulse sequence of an inversion recovery experiment.</span><a class="headerlink" href="#fig1" title="Permalink to this image">¶</a></p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -290,7 +301,7 @@ Inversion recovery was first developed for NMR in the 1940s (Hahn 1949; Drain 19
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">Quantitative T<sub>1</sub> Mapping</a>
+    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">Home</a>
     <a class='right-next' id="next-link" href="IR_SignalModelling.html" title="next page">Signal Modelling</a>
 
     </div>
