@@ -63,7 +63,7 @@ RUN cd $HOME/work;\
                 jupytext==1.11.4 \
                 repo2data; \
     python -m sos_notebook.install;\
-    git clone https://github.com/qmrlab/t1_book_update.git;                            \
+    git clone https://github.com/qMRLab/t1_book_update.git;                            \
     cd t1_book_update/content;\
     git clone https://github.com/neuropoly/qMRLab.git; \
     cd qMRLab; \
