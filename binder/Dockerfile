@@ -63,8 +63,8 @@ RUN cd $HOME/work;\
                 jupytext==1.11.4 \
                 repo2data; \
     python -m sos_notebook.install;\
-    git clone https://github.com/zelenkastiot/t1_book_update.git;                            \
-    cd t1_book_update;\
+    git clone https://github.com/qmrlab/t1_book_update.git;                            \
+    cd t1_book_update/content;\
     git clone https://github.com/neuropoly/qMRLab.git; \
     cd qMRLab; \
     git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
@@ -76,7 +76,7 @@ RUN cd $HOME/work;\
                       startup; \
                       pkg list;"
 
-WORKDIR $HOME/work/t1_book_update
+WORKDIR $HOME/work/t1_book_update/content
 
 USER $NB_UID
 
