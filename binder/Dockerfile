@@ -42,7 +42,8 @@ RUN apt-get update && \
 
 RUN cd $HOME/work;\
     pip install --upgrade pip --ignore-installed certifi; \
-    pip install octave_kernel    \
+    pip install --use-deprecated=legacy-resolver \
+                octave_kernel    \
                 sos==0.17.7 \
                 sos-notebook==0.17.2 \
                 sos-python==0.9.12.1 \
