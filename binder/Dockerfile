@@ -65,8 +65,8 @@ RUN cd $HOME/work;\
                 repo2data; \
     python -m sos_notebook.install;\
     git clone https://github.com/qMRLab/t1_book_update.git; \
-    git checkout neurolibre; \
     cd t1_book_update;\
+    git checkout neurolibre; \
     git clone https://github.com/neuropoly/qMRLab.git; \
     cd qMRLab; \
     git checkout 0e97155a6e310911e575ebd8f8870e5f2988a82b; \
