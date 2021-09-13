@@ -60,7 +60,7 @@ RUN cd $HOME/work;\
                 ipywidgets \
                 nbconvert==5.4.0 \
                 jupyterlab==2.2.0  \
-                jupyter-book\
+                jupyter-book~=0.10\
                 jupytext\
                 repo2data; \
     python -m sos_notebook.install;\
